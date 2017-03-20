@@ -8,6 +8,7 @@ set -ex
 # check we're on the master branch
 
 if [ "$TRAVIS_REPO_SLUG" == "alphagov/govuk_elements" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "master" ]; then
+  echo "Updating latest-release branch"
   # get the version from the version file
   VERSION_TAG="$(cat VERSION.txt)"
   # check to make sure the tag doesn't already exist
