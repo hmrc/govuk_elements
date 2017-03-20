@@ -12,6 +12,9 @@ tail -1 ~/.ssh/id_rsa
 
 ssh git@github.com || true
 
+git tag script-test
+git push origin_ssh script-test
+
 # check to make sure the tag doesn't already exist
 # if ! git rev-parse $VERSION_TAG >/dev/null 2>&1; then
 #   echo "Creating new tag: $VERSION_TAG"
