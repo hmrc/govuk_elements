@@ -23,3 +23,5 @@ before_deploy:
 deploy:
 - provider: script
   script: './push-version-tag.sh'
+  on:
+    all_branches: true
