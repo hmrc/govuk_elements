@@ -16,8 +16,9 @@ git tag script-test
 git push origin_ssh script-test
 
 # check to make sure the tag doesn't already exist
-# if ! git rev-parse $VERSION_TAG >/dev/null 2>&1; then
-#   echo "Creating new tag: $VERSION_TAG"
-#   git tag $VERSION_TAG
-#   git push origin_ssh $VERSION_TAG
-# fi
+if ! git rev-parse $VERSION_TAG >/dev/null 2>&1; then
+  echo "Creating new tag: $VERSION_TAG"
+  git tag $VERSION_TAG
+  echo "Pushing $VERSION_TAG to Github"
+  git push origin_ssh $VERSION_TAG
+fi
