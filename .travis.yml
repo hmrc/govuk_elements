@@ -1,6 +1,7 @@
 language: node_js
 node_js:
  - "4.4.7"
+sudo: false
 before_install:
 - npm install -g grunt-cli
 - git config --global user.name "Travis CI"
@@ -21,7 +22,23 @@ notifications:
 before_deploy:
 - test $TRAVIS_TEST_RESULT = 0
 deploy:
+- provider: npm
+  api_key:
+    secure: VAHPK3W0YVWqx03j659FbKjvEwd+UIDfb1x55to9u+PzyVqQp1CXalsYuKQSavxqInaV3gzNJpbANo6SIXlpAUxZPChiTk0rJwUhz7u1fRY0Lshb+aDOMnXSfjSqiIGThNRpjYdxBiJsnrYP1T6unHuo2A1K8mXjwdFtxhadh+w=
+  email: govuk-dev@digital.cabinet-office.gov.uk
+  on:
+    tags: true
+    all_branches: true
+after_deploy:
 - provider: script
   script: './push-version-tag.sh'
   on:
     all_branches: true
+- provider: script
+  script: "./update-release-branch.sh"
+  on:
+    tags: true
+    all_branches: true
+env:
+  global:
+    secure: eFtS+dlf00c3h4Rpp1FSZw6wOmZPmY4lYbqPV6MQa+VUgh+FRbUYOjDJP3UFaTsWNxMIL4mhEKFYLnkVftBdz1FgPjhIO3jNXleGMgVVedtD+qo5hTu1KI39t68K2YcELx9+kzeccX77WVmv/qJTVg7+f84WP9ebzVOJCQprJuw=
