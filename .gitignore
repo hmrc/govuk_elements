@@ -13,3 +13,4 @@ shots_history
 lib/*
 app/views/snippets/encoded/*
 govuk_modules/*
+backstop_data/*

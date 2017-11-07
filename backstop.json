@@ -1,0 +1,128 @@
+{
+  "id": "GOV.UK Elements",
+  "viewports": [
+    {
+      "label": "phone",
+      "width": 320,
+      "height": 480
+    },
+    {
+      "label": "tablet",
+      "width": 768,
+      "height": 1024
+    },
+    {
+      "label": "desktop",
+      "width": 1280,
+      "height": 800
+    }
+  ],
+  "onBeforeScript": "",
+  "onReadyScript": "",
+  "scenarios": [
+    {
+      "label": "Layout",
+      "url": "http://localhost:3000/layout/",
+      "referenceUrl": "https://govuk-elements.herokuapp.com/layout/",
+      "readySelector": ".example",
+      "selectors": [".example"],
+      "selectorExpansion": true,
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "Typography",
+      "url": "http://localhost:3000/typography/",
+      "referenceUrl": "https://govuk-elements.herokuapp.com/typography/",
+      "readySelector": ".example",
+      "selectors": [".example"],
+      "selectorExpansion": true,
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "Colour",
+      "url": "http://localhost:3000/colour/",
+      "referenceUrl": "https://govuk-elements.herokuapp.com/colour/",
+      "readySelector": ".example",
+      "selectors": [".example"],
+      "selectorExpansion": true,
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "Icons and images",
+      "url": "http://localhost:3000/icons-images/",
+      "referenceUrl": "https://govuk-elements.herokuapp.com/icons-images/",
+      "readySelector": ".example",
+      "selectors": [".example"],
+      "selectorExpansion": true,
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "Data",
+      "url": "http://localhost:3000/data/",
+      "referenceUrl": "https://govuk-elements.herokuapp.com/data/",
+      "readySelector": ".example",
+      "selectors": [".example"],
+      "selectorExpansion": true,
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "Buttons",
+      "url": "http://localhost:3000/buttons/",
+      "referenceUrl": "https://govuk-elements.herokuapp.com/buttons/",
+      "readySelector": ".example",
+      "selectors": [".example"],
+      "selectorExpansion": true,
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "Form elements",
+      "url": "http://localhost:3000/form-elements/",
+      "referenceUrl": "https://govuk-elements.herokuapp.com/form-elements/",
+      "readySelector": ".example",
+      "selectors": [".example"],
+      "selectorExpansion": true,
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "Error",
+      "url": "http://localhost:3000/errors/",
+      "referenceUrl": "https://govuk-elements.herokuapp.com/errors/",
+      "readySelector": ".example",
+      "selectors": [".example"],
+      "selectorExpansion": true,
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "Alpha and beta banners",
+      "url": "http://localhost:3000/alpha-beta-banners/",
+      "referenceUrl": "https://govuk-elements.herokuapp.com/alpha-beta-banners/",
+      "readySelector": ".example",
+      "selectors": [".example"],
+      "selectorExpansion": true,
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    }
+  ],
+  "paths": {
+    "bitmaps_reference": "backstop_data/bitmaps_reference",
+    "bitmaps_test": "backstop_data/bitmaps_test",
+    "engine_scripts": "backstop_data/engine_scripts",
+    "html_report": "backstop_data/html_report",
+    "ci_report": "backstop_data/ci_report"
+  },
+  "report": ["browser"],
+  "engine": "chrome",
+  "engineFlags": [],
+  "asyncCaptureLimit": 5,
+  "asyncCompareLimit": 50,
+  "debug": false,
+  "debugWindow": false
+}

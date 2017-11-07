@@ -32,7 +32,8 @@
     "test": "standard && gulp test",
     "lint": "bundle && bundle exec govuk-lint-sass assets/sass/elements/",
     "start": "gulp develop",
-    "heroku-postbuild": "gulp build"
+    "heroku-postbuild": "gulp build",
+    "vrt": "backstop reference && backstop test"
   },
   "standard": {
     "ignore": [
@@ -46,5 +47,8 @@
   },
   "bugs": {
     "url": "https://github.com/alphagov/govuk_elements/issues"
+  },
+  "devDependencies": {
+    "backstopjs": "^3.0.32"
   }
 }
