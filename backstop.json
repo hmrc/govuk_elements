@@ -1,0 +1,89 @@
+{
+  "id": "govuk_elements",
+  "viewports": [
+    {
+      "label": "phone",
+      "width": 320,
+      "height": 480
+    },
+    {
+      "label": "tablet",
+      "width": 768,
+      "height": 1024
+    },
+    {
+      "label": "desktop",
+      "width": 1280,
+      "height": 800
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Layout",
+      "url": "http://localhost:3000/layout/",
+      "selectors": [".example"],
+      "selectorExpansion": true
+    },
+    {
+      "label": "Typography",
+      "url": "http://localhost:3000/typography/",
+      "selectors": [".example"],
+      "selectorExpansion": true
+    },
+    {
+      "label": "Colour",
+      "url": "http://localhost:3000/colour/",
+      "selectors": [".example"],
+      "selectorExpansion": true
+    },
+    {
+      "label": "Icons and images",
+      "url": "http://localhost:3000/icons-images/",
+      "selectors": [".example"],
+      "selectorExpansion": true
+    },
+    {
+      "label": "Data",
+      "url": "http://localhost:3000/data/",
+      "selectors": [".example"],
+      "selectorExpansion": true
+    },
+    {
+      "label": "Buttons",
+      "url": "http://localhost:3000/buttons/",
+      "selectors": [".example"],
+      "selectorExpansion": true
+    },
+    {
+      "label": "Form elements",
+      "url": "http://localhost:3000/form-elements/",
+      "selectors": [".example"],
+      "selectorExpansion": true
+    },
+    {
+      "label": "Errors and validation",
+      "url": "http://localhost:3000/errors/",
+      "selectors": [".example"],
+      "selectorExpansion": true
+    },
+    {
+      "label": "Alpha and beta banners",
+      "url": "http://localhost:3000/alpha-beta-banners/",
+      "selectors": [".example"],
+      "selectorExpansion": true
+    }
+  ],
+  "paths": {
+    "bitmaps_reference": "backstop_data/bitmaps_reference",
+    "bitmaps_test": "backstop_data/bitmaps_test",
+    "engine_scripts": "backstop_data/engine_scripts",
+    "html_report": "backstop_data/html_report",
+    "ci_report": "backstop_data/ci_report"
+  },
+  "report": ["browser"],
+  "engine": "chrome",
+  "asyncCaptureLimit": 5,
+  "asyncCompareLimit": 50,
+  "debug": false,
+  "debugWindow": false
+}
