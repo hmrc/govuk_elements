@@ -17,6 +17,8 @@
       "height": 800
     }
   ],
+  "onBeforeScript": "chromy/onBefore.js",
+  "onReadyScript": "chromy/onReady.js",
   "scenarios": [
     {
       "label": "Layout",
@@ -28,7 +30,8 @@
       "label": "Typography",
       "url": "http://localhost:3000/typography/",
       "selectors": [".example"],
-      "selectorExpansion": true
+      "selectorExpansion": true,
+      "clickSelector": "summary"
     },
     {
       "label": "Colour",
@@ -58,13 +61,28 @@
       "label": "Form elements",
       "url": "http://localhost:3000/form-elements/",
       "selectors": [".example"],
-      "selectorExpansion": true
+      "selectorExpansion": true,
+      "clickSelector": "input"
+    },
+    {
+      "label": "Example: Form elements",
+      "url": "http://localhost:3000/form-elements/example-form-elements/",
+      "selectors": [".example"],
+      "selectorExpansion": true,
+      "clickSelector": "input"
     },
     {
       "label": "Errors and validation",
       "url": "http://localhost:3000/errors/",
       "selectors": [".example"],
       "selectorExpansion": true
+    },
+    {
+      "label": "Example: Date",
+      "url": "http://localhost:3000/form-elements/example-date/",
+      "selectors": [".example"],
+      "selectorExpansion": true,
+      "clickSelector": "input"
     },
     {
       "label": "Alpha and beta banners",
