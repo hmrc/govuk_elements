@@ -1,6 +1,7 @@
 .sass-cache
 .DS_Store
 .start.pid
+*.log
 node_modules
 # Ignore copied folders
 public/*
@@ -13,3 +14,5 @@ shots_history
 lib/*
 app/views/snippets/encoded/*
 govuk_modules/*
+backstop_data/bitmaps_test/
+backstop_data/html_report/
