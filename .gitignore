@@ -2,6 +2,7 @@
 .DS_Store
 .start.pid
 *.log
+.idea
 node_modules
 # Ignore copied folders
 public/*
