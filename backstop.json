@@ -23,43 +23,71 @@
     {
       "label": "Layout",
       "url": "http://localhost:3000/layout/",
+      "referenceUrl": "http://localhost:4000/layout/",
       "selectors": [".example"],
+      "selectorExpansion": true
+    },
+    {
+      "label": "Example: Grid layout",
+      "url": "http://localhost:3000/layout/example-grid-layout/",
+      "referenceUrl": "http://localhost:4000/layout/example-grid-layout/",
+      "selectors": ["#content"],
       "selectorExpansion": true
     },
     {
       "label": "Typography",
       "url": "http://localhost:3000/typography/",
+      "referenceUrl": "http://localhost:4000/typography/",
       "selectors": [".example"],
       "selectorExpansion": true,
       "clickSelector": "summary"
     },
     {
+      "label": "Example: Typography",
+      "url": "http://localhost:3000/typography/example-typography/",
+      "referenceUrl": "http://localhost:4000/typography/example-typography/",
+      "selectors": ["#content"],
+      "selectorExpansion": true
+    },
+    {
       "label": "Colour",
       "url": "http://localhost:3000/colour/",
+      "referenceUrl": "http://localhost:4000/colour/",
       "selectors": [".example"],
       "selectorExpansion": true
     },
     {
       "label": "Icons and images",
       "url": "http://localhost:3000/icons-images/",
+      "referenceUrl": "http://localhost:4000/icons-images/",
       "selectors": [".example"],
+      "selectorExpansion": true
+    },
+    {
+      "label": "Example: Icons and images",
+      "url": "http://localhost:3000/icons-images/example-icons/",
+      "referenceUrl": "http://localhost:4000/icons-images/example-icons/",
+      "selectors": [".example-icon-list"],
       "selectorExpansion": true
     },
     {
       "label": "Data",
       "url": "http://localhost:3000/data/",
+      "referenceUrl": "http://localhost:4000/data/",
       "selectors": [".example"],
       "selectorExpansion": true
     },
     {
       "label": "Buttons",
       "url": "http://localhost:3000/buttons/",
+      "referenceUrl": "http://localhost:4000/buttons/",
       "selectors": [".example"],
       "selectorExpansion": true
     },
     {
       "label": "Form elements",
       "url": "http://localhost:3000/form-elements/",
+      "referenceUrl": "http://localhost:4000/form-elements/",
       "selectors": [".example"],
       "selectorExpansion": true,
       "clickSelector": "input"
@@ -67,26 +95,30 @@
     {
       "label": "Example: Form elements",
       "url": "http://localhost:3000/form-elements/example-form-elements/",
-      "selectors": [".example"],
+      "referenceUrl": "http://localhost:4000/form-elements/example-form-elements/",
+      "selectors": ["#content"],
       "selectorExpansion": true,
       "clickSelector": "input"
     },
     {
       "label": "Errors and validation",
       "url": "http://localhost:3000/errors/",
+      "referenceUrl": "http://localhost:4000/errors/",
       "selectors": [".example"],
       "selectorExpansion": true
     },
     {
       "label": "Example: Date",
       "url": "http://localhost:3000/form-elements/example-date/",
-      "selectors": [".example"],
+      "referenceUrl": "http://localhost:4000/form-elements/example-date/",
+      "selectors": ["#content"],
       "selectorExpansion": true,
       "clickSelector": "input"
     },
     {
       "label": "Alpha and beta banners",
       "url": "http://localhost:3000/alpha-beta-banners/",
+      "referenceUrl": "http://localhost:4000/alpha-beta-banners/",
       "selectors": [".example"],
       "selectorExpansion": true
     }
