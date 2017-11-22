@@ -90,8 +90,8 @@ main > .heading-xlarge {
 // Example boxes
 // ==========================================================================
 
- .example {
-   @extend %contain-floats;
+.example {
+  @extend %contain-floats;
 //   position: relative;
 //   overflow: hidden;
 //   border: 1px solid $grey-2;
@@ -166,8 +166,7 @@ main > .heading-xlarge {
 //       width: 100%;
 //     }
 //   }
-
- }
+}
 
 
 // 1. Layout
